@@ -1,16 +1,11 @@
 language: java
-
 jdk: oraclejdk11
-
 script: mvn -e verify
-
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
+- bash <(curl -s https://codecov.io/bash)
 notifications:
   email:
     recipients:
-     - evaybatova@gmail.com
-     on_failure: always
-     on_success: change
-
+    - evaybatova@gmail.com
+    on_failure: always
+    on_success: change
